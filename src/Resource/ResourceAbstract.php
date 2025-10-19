@@ -43,7 +43,7 @@ abstract class ResourceAbstract implements ResourceInterface
      * @param mixed                             $data
      * @param callable|TransformerAbstract|null $transformer
      */
-    public function __construct($data = null, $transformer = null, ?string $resourceKey = null)
+    public function __construct(mixed $data = null, mixed $transformer = null, ?string $resourceKey = null)
     {
         $this->data = $data;
         $this->transformer = $transformer;

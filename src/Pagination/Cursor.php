@@ -52,7 +52,7 @@ class Cursor implements CursorInterface
      * @param mixed $prev
      * @param mixed $next
      */
-    public function __construct($current = null, $prev = null, $next = null, ?int $count = null)
+    public function __construct(mixed $current = null, mixed $prev = null, mixed $next = null, ?int $count = null)
     {
         $this->current = $current;
         $this->prev = $prev;

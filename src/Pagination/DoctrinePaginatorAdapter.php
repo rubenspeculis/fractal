@@ -51,7 +51,9 @@ class DoctrinePaginatorAdapter implements PaginatorInterface
      */
     public function getCurrentPage(): int
     {
-        return (int) ($this->paginator->getQuery()->getFirstResult() / $this->paginator->getQuery()->getMaxResults()) + 1;
+        $firstResult = $this->paginator->getQuery()->getFirstResult();
+        $maxResults = $this->paginator->getQuery()->getMaxResults();
+        return (int) ($firstResult / $maxResults) + 1;
     }
 
     /**

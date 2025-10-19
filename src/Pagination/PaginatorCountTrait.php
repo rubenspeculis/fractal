@@ -38,5 +38,4 @@ trait PaginatorCountTrait
 
         return $count;
     }
-
 }
